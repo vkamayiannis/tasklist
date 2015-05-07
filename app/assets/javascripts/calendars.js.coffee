@@ -1,6 +1,6 @@
 $(document).ready ->
   $('#calendar').fullCalendar
-    editable: true,
+    editable: false,
     header:
       left: 'prev,next today',
       center: 'title',
@@ -27,6 +27,6 @@ updateEvent = (the_event) ->
   $.update "/events/" + the_event.id,
     event:
       title: the_event.title,
-      started: "" + the_event.started,
-      finished: "" + the_event.finished,
+      start: "" + the_event.start,
+      end: "" + the_event.end,
       description: the_event.description

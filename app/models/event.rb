@@ -10,9 +10,9 @@ class Event < ActiveRecord::Base
       :id => self.id,
       :title => self.title,
       :description => self.description || "",
-      :started => started.rfc822,
-      :finished => finished.rfc822,
-      :allday => self.allday,
+      :start => started.rfc822,
+      :end => finished.rfc822,
+      :allDay => self.allday,
       :recurring => false,
       :url => Rails.application.routes.url_helpers.event_path(id),
       #:color => "red"
