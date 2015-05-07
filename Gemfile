@@ -39,8 +39,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'momentjs-rails', '>= 2.9.0'
-gem 'bootstrap3-datetimepicker-rails', '~> 4.7.14'
+#gem 'bootstrap3-datetimepicker-rails', '~> 4.7.14'
+gem 'jquery-datetimepicker-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-rest-rails'
 gem 'fullcalendar-rails'
 gem 'coffee-script-source', '1.8.0' #resolves the execjs error on windows
+gem 'i18n'

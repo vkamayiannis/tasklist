@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  events:
+     title: "Event1s"
+     description: "Descriptio1n"
+     started: "Started1"
+     finished: "Finished"
+     allday: "All day"
+     show: "Show"
+     edit: "Edit"
+     deletee: "Delete"

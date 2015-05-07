@@ -14,13 +14,13 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
-        <td><%= event.title %></td>
-        <td><%= event.description %></td>
-        <td><%= event.started %></td>
-        <td><%= event.finished %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= t event.title %></td>
+        <td><%= t event.description %></td>
+        <td><%= t event.started %></td>
+        <td><%= t event.finished %></td>
+        <td><%= link_to "Show", event %></td>
+        <td><%= link_to "Edit", edit_event_path(event) %></td>
+        <td><%= link_to "Delete", event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

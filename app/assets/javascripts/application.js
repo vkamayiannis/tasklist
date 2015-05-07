@@ -6,6 +6,7 @@
 //
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file.
+// require bootstrap-datetimepicker
 //
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
@@ -19,7 +20,8 @@
 //= require jquery.rest
 //= require bootstrap-sprockets
 //= require moment
-//= require bootstrap-datetimepicker
+//= require jquery.datetimepicker
+//= require jquery.datetimepicker/init
 //= require moment/el
 //= require fullcalendar
 //= require turbolinks

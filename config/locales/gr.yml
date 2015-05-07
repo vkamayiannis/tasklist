@@ -1,0 +1,10 @@
+gr:
+  events:
+     title: "Τίτλος"
+     description: "Περιγραφή"
+     started: "Άρχίζει"
+     finished: "Τελείωνει"
+     allday: "Όλη μέρα"
+     show: "Εμφάνιση"
+     edit: "Επεξργασία"
+     deletee: "Διαγραφή"
