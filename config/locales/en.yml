@@ -31,4 +31,6 @@ en:
   listing: "Listing"
   activerecord:
      models:
-       event: Event
+       event: 
+         one: Event
+         other: Events
