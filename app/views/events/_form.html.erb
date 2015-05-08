@@ -12,23 +12,23 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label t :title %><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label t :description %><br>
     <%= f.text_area :description %>
   </div>
   <div class="form-group">
-    <%= f.label :started %><br>
+    <%= f.label t :started %><br>
     <%= f.text_field :started, class: "datetimepicker" %>
   </div>
   <div class="form-group">
-    <%= f.label :finished %><br>
+    <%= f.label t :finished %><br>
     <%= f.text_field :finished, class: "datetimepicker" %>
   </div>
   <div class="form-group">
-    <%= f.label :allday %><br>
+    <%= f.label t :allday %><br>
     <%= f.check_box :allday %>
   </div>
   <div class="actions">

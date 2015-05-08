@@ -2,15 +2,30 @@ gr:
   title: "Τίτλος"
   description: "Περιγραφή"
   started: "Έναρξη"
-  finished: "Ολοκλήρωση"
+  finished: "Λήξη"
   allday: "Όλη μέρα"
   show: "Εμφάνιση"
   edit: "Επεξεργασία"
   delete: "Διαγραφή"
   new_event: "Νέο συμβάν"
   listing: "Λίστα"
+  editing: "Επεξεργασία"
+  back: "Πίσω"
+  helpers:
+    submit:
+      create: "Δημιουργία %{model}"
+      update: "Ενημέρωση %{model}"
   activerecord:
      models:
        event:
          one: Συμβάν
          other: Συμβάντων
+       attributes:
+         title: Τίτλος
+         description: Περιγραφή
+         started: Έναρξη
+         finished: Λήξη
+         allday: Όλη μέρα
+       flash_messages:
+         event_created_successfully: "σγγσδγσδφγ"
+         event_updated_successfully: "σηδηδφη"

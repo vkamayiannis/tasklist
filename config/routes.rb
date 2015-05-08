@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => 'events#index'
   resource :calendar, :only => [:show]
   resources :tasks
   resources :events
