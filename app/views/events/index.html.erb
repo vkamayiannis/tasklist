@@ -1,12 +1,13 @@
-<h1>Listing events</h1>
+<h1><%= t(:listing) + ' ' + Event.model_name.human(count: 2)  %></h1>
+<%= link_to "EN", :locale=>'en' %>|<%= link_to "GR", :locale=>'gr' %>
 
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Started</th>
-      <th>Finished</th>
+      <th><%= t :title %></th>
+      <th><%= t :description %></th>
+      <th><%= t :started %></th>
+      <th><%= t :finished %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,13 +15,13 @@
   <tbody>
     <% @events.each do |event| %>
       <tr>
-        <td><%= t event.title %></td>
-        <td><%= t event.description %></td>
-        <td><%= t event.started %></td>
-        <td><%= t event.finished %></td>
-        <td><%= link_to "Show", event %></td>
-        <td><%= link_to "Edit", edit_event_path(event) %></td>
-        <td><%= link_to "Delete", event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= event.title %></td>
+        <td><%= event.description %></td>
+        <td><%= event.started %></td>
+        <td><%= event.finished %></td>
+        <td><%= link_to t(:show), event %></td>
+        <td><%= link_to t(:edit), edit_event_path(event) %></td>
+        <td><%= link_to t(:delete), event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New event', new_event_path, class: "btn btn-primary" %>
+<%= link_to t(:new_event), new_event_path, class: "btn btn-primary" %>

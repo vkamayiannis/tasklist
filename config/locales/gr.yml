@@ -1,10 +1,16 @@
 gr:
-  events:
-     title: "Τίτλος"
-     description: "Περιγραφή"
-     started: "Άρχίζει"
-     finished: "Τελείωνει"
-     allday: "Όλη μέρα"
-     show: "Εμφάνιση"
-     edit: "Επεξργασία"
-     deletee: "Διαγραφή"
+  title: "Τίτλος"
+  description: "Περιγραφή"
+  started: "Έναρξη"
+  finished: "Ολοκλήρωση"
+  allday: "Όλη μέρα"
+  show: "Εμφάνιση"
+  edit: "Επεξεργασία"
+  delete: "Διαγραφή"
+  new_event: "Νέο συμβάν"
+  listing: "Λίστα"
+  activerecord:
+     models:
+       event:
+         one: Συμβάν
+         other: Συμβάντων

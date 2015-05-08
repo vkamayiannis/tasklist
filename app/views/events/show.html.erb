@@ -1,23 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @event.title %>
+  <strong><%= t :title %>:</strong>
+  <%= t @event.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @event.description %>
+  <strong><%= t :description %>:</strong>
+  <%= t @event.description %>
 </p>
 
 <p>
-  <strong>Started:</strong>
-  <%= @event.started %>
+  <strong><%= t :started %>:</strong>
+  <%= t @event.started %>
 </p>
 
 <p>
-  <strong>Finished:</strong>
-  <%= @event.finished %>
+  <strong><%= t :finished %>:</strong>
+  <%= t @event.finished %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

@@ -20,12 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  events:
-     title: "Event1s"
-     description: "Descriptio1n"
-     started: "Started1"
-     finished: "Finished"
-     allday: "All day"
-     show: "Show"
-     edit: "Edit"
-     deletee: "Delete"
+  title: "Title"
+  description: "Description"
+  started: "Starts"
+  finished: "Ends"
+  allday: "All day"
+  show: "Show"
+  edit: "Edit"
+  delete: "Delete"
+  listing: "Listing"
+  activerecord:
+     models:
+       event: Event
